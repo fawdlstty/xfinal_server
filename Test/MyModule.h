@@ -1,5 +1,6 @@
+#define HEADER2STR(x) #x
 #ifdef __XS_HEADER2STR__
-R"(
+HEADER2STR (
 #endif
 
 #ifndef __MYMODULE_H__
@@ -10,18 +11,14 @@ R"(
 #include <string>
 #include <xs/HttpModule.hpp>
 
-// 我的Web服务模块
-// 用于提供web服务的控制器模块
+/* MyModule */
 struct MyModule: public xs::XSModule {
 	MyModule ();
 
-	// [GET] 你好
-	// 此函数为测试接口，用于测试调用1
+	// func hello
 	std::string hello ();
 
-	// [GET] 你好
-	// 此函数为测试接口，用于测试调用2
-	// @s: 用户名
+	// func world
 	std::string world (std::string name);
 };
 
@@ -30,5 +27,5 @@ struct MyModule: public xs::XSModule {
 #endif //__MYMODULE_H__
 
 #ifdef __XS_HEADER2STR__
-)"
+)
 #endif
