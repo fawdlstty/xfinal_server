@@ -1,0 +1,8 @@
+[submodule "xfinal"]
+	path = xfinal
+	url = https://github.com/xmh0511/xfinal
+	branch = master
+[submodule "taskpool"]
+	path = taskpool
+	url = https://github.com/fawdlstty/taskpool
+	branch = main
