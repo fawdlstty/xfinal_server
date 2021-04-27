@@ -11,14 +11,22 @@ HEADER2STR (
 #include <string>
 #include <xs/HttpModule.hpp>
 
-/* MyModule */
+#define XS_T(a)
+#define XS_D(a)
+#define XS_P(a,b)
+
+XS_T ("MyModule 模块");
+XS_D ("模块详细描述内容。。。");
 struct MyModule: public xs::XSModule {
 	MyModule ();
 
-	// func hello
+	XS_T ("hello 方法");
+	XS_D ("方法详细描述内容。。。");
 	std::string hello ();
 
-	// func world
+	XS_T ("world 方法");
+	XS_D ("方法详细描述内容。。。");
+	XS_P ("name", "名称")
 	std::string world (std::string name);
 };
 
