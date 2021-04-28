@@ -98,6 +98,9 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)..\embed.exe $(SolutionDir)MyModule.h -o $(SolutionDir)embed</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -115,6 +118,9 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)..\embed.exe $(SolutionDir)MyModule.h -o $(SolutionDir)embed</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -128,6 +134,9 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)..\embed.exe $(SolutionDir)MyModule.h -o $(SolutionDir)embed</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -145,14 +154,22 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)..\embed.exe $(SolutionDir)MyModule.h -o $(SolutionDir)embed</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MyModule.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\xs\HttpMethod.hpp" />
-    <ClInclude Include="..\include\xs\HttpModule.hpp" />
+    <ClInclude Include="..\include\xs\XSMethod.hpp" />
+    <ClInclude Include="..\include\xs\XSModule.hpp" />
+    <ClInclude Include="..\include\xs\XSServer.hpp" />
+    <ClInclude Include="embed\embedded_resources\resource_12188679656107829316.hpp" />
+    <ClInclude Include="embed\resource.hpp" />
+    <ClInclude Include="embed\resource_holder.hpp" />
+    <ClInclude Include="embed\span.hpp" />
     <ClInclude Include="MyModule.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

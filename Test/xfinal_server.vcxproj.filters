@@ -19,6 +19,12 @@
     <Filter Include="头文件\include\xs">
       <UniqueIdentifier>{a8ae7fdf-96b3-4494-b30f-577ac351a0de}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\embed">
+      <UniqueIdentifier>{7813236f-a5bc-4b2e-b1ae-3eeb307e3db6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\embed\embedded_resources">
+      <UniqueIdentifier>{4c646f34-e4fd-4357-b71d-eea6d01029bb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -32,11 +38,26 @@
     <ClInclude Include="MyModule.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\xs\HttpMethod.hpp">
+    <ClInclude Include="..\include\xs\XSMethod.hpp">
       <Filter>头文件\include\xs</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\xs\HttpModule.hpp">
+    <ClInclude Include="..\include\xs\XSServer.hpp">
       <Filter>头文件\include\xs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\xs\XSModule.hpp">
+      <Filter>头文件\include\xs</Filter>
+    </ClInclude>
+    <ClInclude Include="embed\resource.hpp">
+      <Filter>头文件\embed</Filter>
+    </ClInclude>
+    <ClInclude Include="embed\resource_holder.hpp">
+      <Filter>头文件\embed</Filter>
+    </ClInclude>
+    <ClInclude Include="embed\span.hpp">
+      <Filter>头文件\embed</Filter>
+    </ClInclude>
+    <ClInclude Include="embed\embedded_resources\resource_12188679656107829316.hpp">
+      <Filter>头文件\embed\embedded_resources</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

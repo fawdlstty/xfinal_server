@@ -1,11 +1,12 @@
-#ifndef __HTTP_METHOD_HPP__
-#define __HTTP_METHOD_HPP__
+#ifndef __XS_METHOD_HPP__
+#define __XS_METHOD_HPP__
 
 
 
 #include <cstdint>
 #include <functional>
 #include <memory>
+#include <mutex>
 #include <string>
 
 
@@ -133,4 +134,4 @@ namespace xs {
 
 
 
-#endif //__HTTP_METHOD_HPP__
+#endif //__XS_METHOD_HPP__
